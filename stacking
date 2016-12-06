@@ -1,0 +1,8 @@
+# in stacking, the combining mechanism is that the output of the classifiers will be used as training data for another classifier
+to approximate the same target function. basically, you let the level 1 classifier to figure out the combining mechanism
+#stacked Generalization
+1.split the training set into two disjoint sets
+2.train several base learners on the first part
+3.test the base learners on the second part
+4.using the prediction from 3 as the inputs, and the correct resposes as the outputs, train a higher level learner
+// what does train a higher level learner mean then? like validate set?
