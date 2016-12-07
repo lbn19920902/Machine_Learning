@@ -1,0 +1,48 @@
+# hacker's approach
+import numpy as np
+total_tosses=30
+num_heads=24
+prob_head=0.5
+#0 is tail and 1 is head
+experiment=np.random.randint(0,2,total_tosses)
+print "data of the experiment:", experiment
+print" heads in the experiment:", experiment[experiment==1]
+head_count=experiment[experiment==1].shape[0]
+
+# write out a loop for repeat experiment 100 times
+ def coin_toss_experiment(times_to_repeat):
+        head_count=np.empty([times_to_repeat,1],dtype=int)
+    for times in np.arange(times_to_repeat):
+        experiment=np.random.randint(0,2,total_tosses)
+        head_count[times]=experiment[experiment==1].shape[0]
+return head_count
+# use type(whatever) return the type of whatever
+import seaborn as sns
+sns.distplot(head_count,kde=False)
+head_count[head_count>=24]
+#-------------------------------fen----ge------xian-------------------
+# resample
+np.random.shuffle(shoe_sales)
+#in plain english, confidence interval is the range of values the measurement metric is going to take
+#generate a uniform random sample
+random=np.random.choice(before_opt,size=before_opt.size,replace=True)
+#do a boostrap_experiment()
+def bootstrap_experiment(number_of_times):
+    mean_difference=np.empty(number_of_times,1])
+    for times in np.arange(number_of_times):
+        randome=np.random.choice(before_opt,size=before_opt.size,replace=True)
+        rr=np.random.choice(kk,size=emv.size,replace=True)
+        mean_difference[times]=np.mean(random_after_opt)-np.mean(random_before_opt)
+    return mean_difference
+
+mean_difference=np.sort(mean_difference,axis=0)
+mean_difference
+np.percentile(mean_difference,[5,95])
+#basic metrics
+import numpy as np
+import pandas as pd
+from datetime import datetime as dt
+from scipy import stats
+#Covariance describes both how far the variables are spread out, and the nature of their relationship,
+# Covariance is a measure of how much two variables change together. 
+'\n' #shift down to next row
